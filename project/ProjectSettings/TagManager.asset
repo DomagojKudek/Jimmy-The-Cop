@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Breakable
+  - GM
+  - Platform
+  - UnCollidable
+  - Object
+  - Fire
+  - Debris
+  - Plant
+  - Point
+  - AbilityIcon
+  - ButtonHint
+  - CinemachineVirtualCamera
+  - RespawnParent
+  - IntroParent
+  - Bomb
+  - LaunchPad
+  - Boss
+  - HealthPayload
+  - mummyThrow
+  - Shockwave
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PostProcessing
+  - UnCollidable
+  - Enemy
+  - IgnoreCollisions
+  - Geometrija1
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

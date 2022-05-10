@@ -1,0 +1,66 @@
+tree("Root")
+    fallback
+        tree("Attack")
+        tree("Move")
+
+tree("Attack")
+    sequence
+        CheckCanAttack(9)
+        fallback
+            tree("AttackClose")
+            tree("AttackFar")
+
+tree("AttackClose")
+    fallback
+        sequence
+            CheckPlayerClose
+            tree("GroundAttack")
+
+tree("GroundAttack")
+    sequence
+        SetAnimation("groundattack")
+        while
+            IsAnimationPlaying("groundattack")
+            AttackClose
+
+tree("AttackFar")
+        fallback
+            sequence
+                CheckStage(1)
+                random(0.6, 0.4)
+                    tree("BombAttack")
+                    tree("GroundAttack")
+
+            sequence
+                CheckStage(2)
+                random(0.4,0.4,0.2)
+                    tree("BombAttack")
+                    tree("PushAttack")
+                    tree("GroundAttack")
+
+tree("BombAttack")
+    sequence
+        SetAnimation("throw")
+        while
+            IsAnimationPlaying("throw")
+            AttackFar
+
+tree("PushAttack")
+    sequence
+        SetAnimation("push")
+        while
+            IsAnimationPlaying("push")
+            AttackFar
+
+tree("Move")
+    while
+        IsAnimationPlaying("walk", "idle")
+        fallback
+            sequence
+                SetAnimation("walk")
+                SetDestination_Player
+                MoveToDestination
+            SetAnimation("idle")
+
+
+        

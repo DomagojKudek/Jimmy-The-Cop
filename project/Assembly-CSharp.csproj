@@ -1,0 +1,1703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{FB112415-DF37-FFF0-193C-C41C1F943A0D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>UNITY_2021_2_17;UNITY_2021_2;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;UNITY_ANALYTICS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CROSS_PLATFORM_INPUT;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.14</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2021.2.17f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\Camera\IntroController.cs" />
+    <Compile Include="Assets\Scripts\VFX\PlantCollision.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Bat\Patroller1.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Type\z_Edge.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\GUIControlsFREE.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\gltfExporter.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Util\G_ExtensionMethods.cs" />
+    <Compile Include="Assets\CloudsMoving.cs" />
+    <Compile Include="Assets\Scripts\Enemy\BOSS\Boss.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Fps\G_FpsMonitor.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\LockQueue.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\ShooterGameController.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\glTFMaterial.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Bat\WaypointPath1.cs" />
+    <Compile Include="Assets\Scripts\Pickups\PickupRefreshCD.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Scripts\Explosive.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\JsonSchemaValidator\IJsonSchemaValidator.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\DynamicShadowSettings.cs" />
+    <Compile Include="Assets\Scripts\Managers\KillZone.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Extensions\TypeExtensions.cs" />
+    <Compile Include="Assets\Scripts\Props\LaunchPad.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Enum\z_ComponentIndex.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\LerpControlledBob.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Extensions\EnumExtensions.cs" />
+    <Compile Include="Assets\GarbageCollectGroundAttack.cs" />
+    <Compile Include="Assets\Scripts\Camera\AnimationEndTrigger.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\PlatformSpecificContent.cs" />
+    <Compile Include="Assets\Scripts\Props\Bomb.cs" />
+    <Compile Include="Assets\Scripts\Managers\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Bat\BatNavigation.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\IEnumeratorExtensions.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\02_PlayTag\Assets\Dialogue.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Fps\G_FpsText.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\gltfImporter.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Bat\BatController.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\ExternalAssets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\Doors\Button.cs" />
+    <Compile Include="Assets\Scripts\Respawn\CheckpointSystem.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Enum\z_SelectionRenderState.cs" />
+    <Compile Include="Assets\ExternalAssets\SampleScenes\Scripts\LevelReset.cs" />
+    <Compile Include="Assets\Scripts\Enemy\BOSS\BossController.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Enum\z_MirrorCoordinateSpace.cs" />
+    <Compile Include="Assets\ExternalAssets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\AI.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\IStore\StringBuilderStore.cs" />
+    <Compile Include="Assets\Scripts\Managers\ConfigurationManager.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Cameras\Scripts\HandHeldCam.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Fps\G_FpsManager.cs" />
+    <Compile Include="Assets\Scripts\Ability\Pull.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\Unit.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperStateMachine.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\MsgPack\MsgPackNode.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\01_Move\Assets\Move.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\Scripts\SimpleStateMachine.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Cameras\Scripts\FreeLookCam.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\IValueNode.cs" />
+    <Compile Include="Assets\Scripts\Managers\PlayerManager.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Json\JsonString.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Extensions\StringExtensions.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
+    <Compile Include="Assets\Shared\Scripts\ProximityActivate.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
+    <Compile Include="Assets\Scripts\Enemy\HammerBro.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Fps\G_FpsGraph.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\AnimationImporter.cs" />
+    <Compile Include="Assets\Scripts\UI\AbilityIcon.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Json\JsonSchema.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Enum\z_PlacementDirection.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\TimedObjectActivator.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\MonoBehaviour\z_AdditionalVertexStreams.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\AnimationExporter.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Type\z_IHasDefault.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Extensions\ObjectExtensions.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\PreExportShaderProps\Unlit_Texture.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\PostProcessingProfile.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\CameraRefocus.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\glTFTexture.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\ExtensionsAndExtras\glTFMesh.Primitives.extras.targetNames.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Math3d.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\JsonFormatter.cs" />
+    <Compile Include="Assets\Scripts\Ability\Friction.cs" />
+    <Compile Include="Assets\Scripts\Managers\HUDManager.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Player\JimmyController1.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\PostProcessingContext.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
+    <Compile Include="Assets\ChangeArea.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\IStore\StreamStore.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Bat\Unit1.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\JsonSchemaValidator\JsonNumberValidator.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\ZipArchiveStorage.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\WaypointPath.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Bat\BatNavigationBoss.cs" />
+    <Compile Include="Assets\ExternalAssets\Supercyan Character Pack Free Sample\Scripts\Demo.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Ram\G_RamMonitor.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Audio\G_AudioGraph.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperMath.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\PreExportShaderProps\UniGLTF_UniUnlit.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Json\JsonSchemaAttribute.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Cameras\Scripts\AutoCam.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Utility\z_MeshUtility.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Util\G_Singleton.cs" />
+    <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\PreExportShaderProps\Unlit_Transparent.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\ExtensionsAndExtras\glTFExtensions.cs" />
+    <Compile Include="Assets\ExternalAssets\SampleScenes\Scripts\CameraSwitch.cs" />
+    <Compile Include="Assets\Shared\Ramps\Runtime\RampAsset.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Json\JsonNode.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\FollowCamera.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Extensions\StringExtensions.cs" />
+    <Compile Include="Assets\Scripts\Respawn\AreaManager.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Enum\z_BrushMirror.cs" />
+    <Compile Include="Assets\Scripts\Pickups\Spike.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\Scheduler.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\CurveControlledBob.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenuController.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Shader\G_GraphShader.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\IStorage.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\MonoBehaviour\z_OverlayRenderer.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\AIVision.cs" />
+    <Compile Include="Assets\ExternalAssets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
+    <Compile Include="Assets\Scripts\Managers\LoadSystem.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\ExtensionsAndExtras\glTFNode.cs" />
+    <Compile Include="Assets\Scripts\Doors\PressurePlate.cs" />
+    <Compile Include="Assets\Scripts\Doors\ButtonTimer.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\JsonSchemaValidator\JsonBoolValidator.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\TriggerType.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\GraphyManager.cs" />
+    <Compile Include="Assets\Scripts\VFX\ToggleFractureVisibility.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
+    <Compile Include="Assets\mummyThrowDamage.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\ArenaAssets\Desert Arena\Scripts\Rotator.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Cameras\Scripts\PivotBasedCameraRig.cs" />
+    <Compile Include="Assets\Scripts\VFX\GravityFieldHexagonalControl.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\glbImporter.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\JsonSchemaValidator\JsonSchemaValidator.cs" />
+    <Compile Include="Assets\Shared\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\StaticMeshIntegrator.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+    <Compile Include="Assets\Scripts\Managers\Teleport.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Type\z_SplatSet.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\TextureLoader.cs" />
+    <Compile Include="Assets\PandaBehaviour\Core\PandaBehaviour.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\TextureExportManager.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\JsonSchemaValidator\JsonSchemaValidatorFactory.cs" />
+    <Compile Include="Assets\Scripts\Enemy\PushIndicator.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\AnimationCurveData.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\TextureIO.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\PreExportShaderProps\Unlit_Color.cs" />
+    <Compile Include="Assets\Scripts\Ability\Push_Pull.cs" />
+    <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\IStore\ByteUnion.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\00_ChangeColor\Assets\MyCube.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\ImporterContext.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\TextureItem.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Customization Scripts\ForceSliderToMultipleOf3.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\Scheduler\CurrentThreadScheduler.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\RPGCharacterWeaponControllerFREE.cs" />
+    <Compile Include="Assets\Scripts\Managers\AnimatorManager.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\Scripts\Enemy\DumbEnemy.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Json\JsonParser.cs" />
+    <Compile Include="Assets\ExternalAssets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
+    <Compile Include="Assets\Scripts\Respawn\SerializableVector3.cs" />
+    <Compile Include="Assets\Scripts\Enemy\BOSS\HeadDamageBoss.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\Scripts\Respawn\Area.cs" />
+    <Compile Include="Assets\ClearAnimationParameter.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\glTFMesh.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\PreExportShaderProps\Standard.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\RPGCharacterMovementControllerFREE.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Type\z_IValid.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\MsgPack\MsgPackTypeExtensions.cs" />
+    <Compile Include="Assets\ChangemeshAtRuntime.cs" />
+    <Compile Include="Assets\ExternalAssets\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\PreExportShaderProps\Unlit_Transparent_Cutout.cs" />
+    <Compile Include="Assets\Scripts\Respawn\LevelSelect.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\BulletImpact.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\RPGCharacterInputControllerFREE.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Type\z_GradientSerializer.cs" />
+    <Compile Include="Assets\Scripts\UI\ChargeMeter.cs" />
+    <Compile Include="Assets\Scripts\Props\SpikeSinusoidal.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\FPSCounter.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\RPGCharacterControllerFREE.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraController_v2.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Extensions\glTFExtensions.cs" />
+    <Compile Include="Assets\ExternalAssets\SampleScenes\Scripts\ParticleSceneControls.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\Scripts\Gravity.cs" />
+    <Compile Include="Assets\Scripts\Respawn\SerializableQuaternion.cs" />
+    <Compile Include="Assets\Scripts\VFX\CameraShakeCinemamachine.cs" />
+    <Compile Include="Assets\Spiketrap1.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\Scripts\Audio\Sound.cs" />
+    <Compile Include="Assets\UniGLTF\UniUnlit\Scripts\Utils.cs" />
+    <Compile Include="Assets\Scripts\VFX\ShrubSound.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Type\z_Mesh.cs" />
+    <Compile Include="Assets\Scripts\Ability\Push.cs" />
+    <Compile Include="Assets\Scripts\RotateCameraEvent\RotateCameraEvent.cs" />
+    <Compile Include="Assets\Shared\Scripts\SimpleCharacterMotor.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Ram\G_RamManager.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\UniGLTFVersion.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\MsgPack\EndianConverter.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Extensions\ArrayExtensions.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\02_PlayTag\Assets\Computer.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\glEnum.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Extensions\ByteExtensions.cs" />
+    <Compile Include="Assets\Scripts\Props\MovingPlatformStick.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Enum\z_MeshChannel.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Cameras\Scripts\TargetFieldOfView.cs" />
+    <Compile Include="Assets\Scripts\Ability\GravityField.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\SimpleMouseRotator.cs" />
+    <Compile Include="Assets\Scripts\Managers\Configuration.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\MsgPack\MsgPackFormatter.cs" />
+    <Compile Include="Assets\Scripts\VFX\GravityShaderControl.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\Unit.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\TaskChain.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Bat\BatColliderControl.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Customization Scripts\CustomizeGraphy.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Ram\G_RamGraph.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+    <Compile Include="Assets\RingController.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\MsgPack\MsgPackParser.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\glTFCamera.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\AnimationKeyframeData.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Type\z_ColorMask.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\glbTypes.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\IFormatter.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\Scheduler\ThreadScheduler.cs" />
+    <Compile Include="Assets\Scripts\Managers\GraphicalOptionsManager.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Props\SpawnSpikeBalls.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\glTF.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Cameras\Scripts\AbstractTargetFollower.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\Scripts\Pickups\Pickup.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\SmoothFollow.cs" />
+    <Compile Include="Assets\Scripts\UI\SignController.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\FogModel.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Type\z_SplatWeight.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\Scheduler\StepScheduler.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\MainThreadDispatcher.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Projektil.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\IStore\IStore.cs" />
+    <Compile Include="Assets\Scripts\Pickups\PickupHeart.cs" />
+    <Compile Include="Assets\Scripts\BossScene\StartBossFight.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\Schedulable.cs" />
+    <Compile Include="Assets\Scripts\Respawn\TeleportCheckpoint.cs" />
+    <Compile Include="Assets\Scripts\Managers\SaveState.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\JsonSchemaValidator\JsonObjectValidator.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\Scripts\BossScene\BossSceneHack.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\glTFAnimation.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\Code\IKHandsFREE.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\Scripts\UI\IntroText.cs" />
+    <Compile Include="Assets\Scripts\Audio\BackgroundMusic.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Type\z_AttributeLayout.cs" />
+    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\glTFSkin.cs" />
+    <Compile Include="Assets\Scripts\Ability\PositionFromPlayer.cs" />
+    <Compile Include="Assets\MummyThrowController.cs" />
+    <Compile Include="Assets\GarbageCollectPush.cs" />
+    <Compile Include="Assets\Scripts\Managers\LoadSceneOnTrigger.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\WaypointCircuit.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\BytesBuffer.cs" />
+    <Compile Include="Assets\Scripts\VFX\TumbleweedRollingSounds.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\TimedObjectDestructor.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\UI\IModifiableState.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperCollisionType.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\GrainComponent.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\FormatterExtensions.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\ShaderPropExporter\ShaderProps.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Ram\G_RamText.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Characters\RollerBall\Scripts\Ball.cs" />
+    <Compile Include="Assets\Scripts\Respawn\DisableIntro.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\glTFNode.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\MeshWithMaterials.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\JsonSchemaValidator\JsonEnumValidator.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\ActionDisposer.cs" />
+    <Compile Include="Assets\GarbageCollectPrevious.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\UnlockedLevels.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\glTFBuffer.cs" />
+    <Compile Include="Assets\Scripts\VFX\Daytime_v2.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Audio\G_AudioMonitor.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\BSPTree.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\ExtensionsAndExtras\glTFCameraExtensions.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\UserLutModel.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Enum\z_Culling.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\ShaderPropExporter\PreShaderPropExporter.cs" />
+    <Compile Include="Assets\Scripts\VFX\TogglePlantIntractability.cs" />
+    <Compile Include="Assets\ExternalAssets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
+    <Compile Include="Assets\Shared\Scripts\AdjustTimeScale.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Audio\G_AudioText.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\Scheduler\ThreadPoolScheduler.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\DragRigidbody.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\UnityPath.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Utility\z_Vector.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\ShaderStore.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\Patroller.cs" />
+    <Compile Include="Assets\Scripts\Enemy\ShockwaveParent.cs" />
+    <Compile Include="Assets\Scripts\VFX\PlantCollisionAlwaysSwinging.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Enum\z_PaintMode.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Util\G_FloatString.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\MsgPack\MsgPackType.cs" />
+    <Compile Include="Assets\Scripts\Pickups\PickupKrafna.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\ExtensionsAndExtras\KHR_materials_unlit.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\MonoBehaviourComparator.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\MonitorQueue.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\MsgPack\Exceptions.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Json\Exceptions.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\GraphyDebugger.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Type\z_CommonEdge.cs" />
+    <Compile Include="Assets\Scripts\Doors\SlidingDoor.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Extensions\UnityExtensions.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperCollider.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\BytesReader.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Json\JsonFormatter.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\FollowTarget.cs" />
+    <Compile Include="Assets\HolyShift\Scripts\CheckForStandardAssets.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\TextureSamplerUtil.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\StringSegment.cs" />
+    <Compile Include="Assets\Scripts\UI\OptionsMenu.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Extensions\ArraySegmentExtensions.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\ForcedReset.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+    <Compile Include="Assets\UniGLTF\DepthFirstScheduler\Functor.cs" />
+    <Compile Include="Assets\ExternalAssets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\glTFAssets.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Customization Scripts\UpdateTextWithSliderValue.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Json\JsonValue.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\ObjectResetter.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\MaterialImporter.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\JsonSchemaValidator\JsonDictionaryValidator.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
+    <Compile Include="Assets\Scripts\Pickups\PickupAbility.cs" />
+    <Compile Include="Assets\Scripts\Respawn\Checkpoint.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Bat\AI1.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Util\G_Intstring.cs" />
+    <Compile Include="Assets\GarbageCollectThrow.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\AlphaButtonClickMask.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\MaterialExporter.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\IFileSystemAccessor.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Bat\BatControllerBoss.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\DebugDraw.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\BossPushActionCollide.cs" />
+    <Compile Include="Assets\Scripts\Managers\PauseManager.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Advanced\G_AdvancedData.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Extensions\JsonParserExtensions.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\TextureConverter.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\FOVKick.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\MsgPack\MsgPackValue.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Utility\z_Math.cs" />
+    <Compile Include="Assets\Scripts\Enemy\SpikeBall.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\BruteForceMesh.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\JsonSchemaValidator\JsonStringValidator.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\Bullet.cs" />
+    <Compile Include="Assets\Scripts\VFX\GenerateDebris.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\MonoBehaviour\z_ZoomOverride.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\2D\Scripts\Restarter.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Customization Scripts\ForceSliderToPowerOf2.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\ArenaAssets\Desert Arena\Scripts\MaterialMover.cs" />
+    <Compile Include="Assets\Scripts\Doors\PresurePlateTimer.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\IStore\BytesStore.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+    <Compile Include="Assets\Scripts\Doors\Door.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\2D\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\ExtensionsAndExtras\KHR_draco_mesh_compression.cs" />
+    <Compile Include="Assets\Scripts\Camera\MainMenu.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\UniGLTFException.cs" />
+    <Compile Include="Assets\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\UnitExplosion.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\EventSystemChecker.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Graph\G_Graph.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\ArenaAssets\Desert Arena\Scripts\ChestDemo.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Audio\G_AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Enum\z_ModelSource.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Utility\ActivateTrigger.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\Json\SimpleJSON.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scene\Color Picker\G_CUIColorPicker.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\NodeImporter.cs" />
+    <Compile Include="Assets\Scripts\Enemy\DumbPointEnemy.cs" />
+    <Compile Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\UI\IMovable.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\FogComponent.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\TriangleUtil.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Enum\z_Direction.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\02_PlayTag\Assets\Player.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+    <Compile Include="Assets\Scripts\RotateCameraEvent\NormalViewTrigger.cs" />
+    <Compile Include="Assets\Scripts\VFX\Daytime.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <Compile Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\Core\SuperCharacterController.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Cameras\Scripts\LookatTarget.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Shockwave.cs" />
+    <Compile Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\HUD.cs" />
+    <Compile Include="Assets\Scripts\Pickups\GoldenDonut.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Utility\z_Util.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\Format\JsonSerializableBase.cs" />
+    <Compile Include="Assets\ProCore\Polybrush\Code\Scripts\Type\z_RndVec3.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\IO\MeshImporter.cs" />
+    <Compile Include="Assets\UniGLTF\Core\Scripts\UniGLTFVersion_partial.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\Realistic Hail Set\Demo Scene\Scripts\DemoSceneController.cs" />
+    <Compile Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
+    <Compile Include="Assets\Scripts\Ability\PushWithParticles.cs" />
+    <Compile Include="Assets\amusedART\Mushroom_Monster\Script\MushroomMon_Ani_Test.cs" />
+    <Compile Include="Assets\Scripts\RotateCameraEvent\EpicViewTrigger.cs" />
+    <Compile Include="Assets\UniGLTF\UniJSON\Scripts\JsonSchemaValidator\JsonArrayValidator.cs" />
+    <Compile Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Runtime\Models\DitheringModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\ExternalAssets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\PandaBehaviour\Examples\02_PlayTag\Assets\TagDialogue.BT.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlender_SfSrc.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\SineVFX\TranslucentCrystals\Resources\Shaders\SkyboxProceduralDesaturated.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\GrainGen.shader" />
+    <None Include="Assets\ProCore\Polybrush\ThirdPartyLicenses.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\SineVFX\TranslucentCrystals\Readme.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+    <None Include="Assets\PandaBehaviour\Core\PandaBehaviour.dll" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Changelog.txt" />
+    <None Include="Assets\PandaBehaviour\Examples\02_PlayTag\Assets\PlayTag.commented.BT.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\Example\z_UnlitTextureBlendAndSnow.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlendWithVertexColor_SfSrc.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Effects\Projectors\Guidelines.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\LutGen.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+    <None Include="Assets\PandaBehaviour\Examples\01_Move\Assets\Move.BT.txt" />
+    <None Include="Assets\PandaBehaviour\README.txt" />
+    <None Include="Assets\XInputDotNet\Docs.txt" />
+    <None Include="Assets\UniGLTF\Resources\Shaders\NormalMapDecoder.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\Noise.cginc" />
+    <None Include="Assets\ExternalAssets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\XInputDotNet\Plugins\XInputDotNetPure.dll" />
+    <None Include="Assets\Scripts\Enemy\Bat\Patroller.BT 1.txt" />
+    <None Include="Assets\POLYGON_Renderbox\Shaders\UnlitVertexColour_Alpha.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlendMobile.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\TAA.cginc" />
+    <None Include="Assets\EffectExamples\Misc Effects\Prefabs\Readme_Dissolve_Respawn_.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+    <None Include="Assets\ProCore\Polybrush\Font\SIL Open Font License.txt" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlendHeight.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_StandardVertexColor.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+    <None Include="Assets\ExternalAssets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+    <None Include="Assets\PandaBehaviour\LICENSE.TXT" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\HolyShift\Shaders\FXWaterLowpoly.shader" />
+    <None Include="Assets\Scripts\Enemy\Bat\AI.BT.lib 1.txt" />
+    <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlendModulate.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Cameras\CameraGuidelines.txt" />
+    <None Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Shaders\GraphMobile.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+    <None Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\Player.BT.txt" />
+    <None Include="Assets\EffectExamples\Magic Effects\Shaders\Ice.shader" />
+    <None Include="Assets\PandaBehaviour\Core\PandaBehaviour.xml" />
+    <None Include="Assets\Scripts\Enemy\Bat\BatBoss.txt" />
+    <None Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Font\Northwest-Bold\ERIC-TIRADO-NORTHWEST-LICENSE.txt" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TriPlanarBlendLegacy_SfSrc.shader" />
+    <None Include="Assets\EffectExamples\Misc Effects\Shaders\Respawn.shader" />
+    <None Include="Assets\PandaBehaviour\ChangeLog.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\XInputDotNet\Plugins\x86_64\XInputInterface.dll" />
+    <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\ACES.cginc" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_BaseWithDecals.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+    <None Include="Assets\LowPolyFantasyClouds\Shaders\CloudsShader.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\FXAA.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\SineVFX\TranslucentCrystals\Resources\Shaders\Crystal.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_VertexBillboard.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\Fog.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+    <None Include="Assets\Scripts\Enemy\BOSS\BossBT.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+    <None Include="Assets\XInputDotNet\Plugins\x86\XInputInterface.dll" />
+    <None Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\Sniper.BT.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+    <None Include="Assets\ProCore\Polybrush\Shader\Example\z_UnlitTextureBlend.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\UI\Trackball.shader" />
+    <None Include="Assets\PandaBehaviour\Examples\00_ChangeColor\Assets\ChangeColor.BT.txt" />
+    <None Include="Assets\HolyShift\readme.txt" />
+    <None Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\Hunter.BT.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Effects\ImageEffects\Readme.txt" />
+    <None Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Font\Roboto\LICENSE.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\Common.cginc" />
+    <None Include="Assets\PandaBehaviour\Examples\02_PlayTag\Assets\Computer.BT.txt" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlendBmp_SfSrc.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_DiffuseVertexColor.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\Bloom.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\Uber.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlender.shader" />
+    <None Include="Assets\UniGLTF\UniUnlit\Resources\UniUnlit.shader" />
+    <None Include="Assets\HolyShift\Shaders\WaterInclude.cginc" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+    <None Include="Assets\Polygonal Particles\Assets\Shaders\GradientBackgroundShader.shader" />
+    <None Include="Assets\Tayx\Graphy - Ultimate Stats Monitor\Shaders\GraphStandard.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+    <None Include="Assets\EffectExamples\Misc Effects\Shaders\FireFly.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlendHeight_SfSrc.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\TAA.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TriPlanarBlend.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_Overlay.shader" />
+    <None Include="Assets\NavMesh\ProjectSettings\ProjectVersion.txt" />
+    <None Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\Patroller.BT.txt" />
+    <None Include="Assets\PandaBehaviour\Examples\02_PlayTag\Assets\PlayTag.BT.txt" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\Blit.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\Bloom.cginc" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+    <None Include="Assets\ProCore\Polybrush\Shader\Example\z_UnlitTextureBlend_WithMetaData.shader" />
+    <None Include="Assets\Graphics assets\BOSS ROOM\LowpolyDungeonAssets\Demo Scene\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\XInputDotNet\MITLicense.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\UniGLTF\Resources\Shaders\NormalMapEncoder.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TriPlanarBlend_SfSrc.shader" />
+    <None Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\AI.BT.lib.txt" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TriPlanarBlendLegacy.shader" />
+    <None Include="Assets\UniGLTF\Resources\Shaders\StandardVColor.shader" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlendWithVertexColor.shader" />
+    <None Include="Assets\Realistic Hail Set\README.txt" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlendBmp.shader" />
+    <None Include="Assets\RPG Character Animation Pack FREE\SuperCharacterController\SuperCharacterController\README.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\POLYGON_Renderbox\Shaders\SkyGradient.shader" />
+    <None Include="Assets\ProCore\Polybrush\README.txt" />
+    <None Include="Assets\PandaBehaviour\Examples\03_Shooter\Assets\GameController.BT.txt" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlendMobile_SfSrc.shader" />
+    <None Include="Assets\EffectExamples\Misc Effects\Shaders\Dissolve.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\ExternalAssets\Standard Assets\Fonts\OpenSans\License!.txt" />
+    <None Include="Assets\ProCore\Polybrush\Shader\z_TextureBlendModulate_SfSrc.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DeviceSimulatorModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.DeviceSimulatorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DiagnosticsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.DiagnosticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.QuickSearchModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.QuickSearchModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreFontEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreTextEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIBuilderModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIBuilderModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="clipper_library">
+      <HintPath>Library\PackageCache\com.unity.cinemachine@2.8.4\Runtime\ThirdParty\clipper_library.dll</HintPath>
+    </Reference>
+    <Reference Include="XInputDotNetPure">
+      <HintPath>Assets\XInputDotNet\Plugins\XInputDotNetPure.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\AnalyticsStandardEvents\Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="PandaBehaviour">
+      <HintPath>Assets\PandaBehaviour\Core\PandaBehaviour.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Configuration.Install.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.OracleClient">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services.Client">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.DirectoryServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices.Protocols">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.DirectoryServices.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Drawing.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Selectors">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IdentityModel.Selectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json.Microsoft">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Json.Microsoft.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Debugger">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Debugger.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Experimental">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Experimental.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Observable.Aliases">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Observable.Aliases.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Providers">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Runtime.Remoting">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Runtime.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Windows.Forms">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Windows.Threading">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reactive.Windows.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Context">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Reflection.Context.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.DurableInstancing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.DurableInstancing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Runtime.Serialization.Formatters.Soap.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Activation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.Activation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Discovery">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.Discovery.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Routing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.Routing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ServiceProcess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.ApplicationServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.DynamicData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Extensions.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.SelfHost">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Http.SelfHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mobile">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.RegularExpressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Routing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Windows.Forms.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Workflow.Activities">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Workflow.Activities.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Workflow.ComponentModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Workflow.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Workflow.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Workflow.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Http.Rtc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.DispatchProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>Library\ScriptAssemblies\Purchasing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Analytics">
+      <HintPath>Library\ScriptAssemblies\Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Monetization">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NavMeshComponentsExamples.csproj">
+      <Project>{27214C9D-5527-0F85-E1BE-AB9BA282B72F}</Project>
+      <Name>NavMeshComponentsExamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{21745EA2-EA00-759C-8BC5-D26A7DF8916A}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsExamplesEditor.csproj">
+      <Project>{EA1FCCDB-2C1D-6C1D-5295-6AE57E8DF532}</Project>
+      <Name>NavMeshComponentsExamplesEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{03ACAC5F-CA29-359F-2395-1B7C53AF98B8}</Project>
+      <Name>NavMeshComponents</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

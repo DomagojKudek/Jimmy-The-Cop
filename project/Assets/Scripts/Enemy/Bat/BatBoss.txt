@@ -1,0 +1,25 @@
+tree("Root")
+	repeat mute tree("BeAlive")
+
+tree("BeAlive")
+	//This unit attacks when possible,
+	//otherwise it patrols a predefined path.
+	fallback
+		tree("Patroll")
+tree("Patroll")
+	//While no enemy is spotted,
+	//follow the assigned waypoints.
+	//while
+		//sequence
+		//	not HasEnemy
+		//	not Acquire_Enemy
+
+		repeat
+			sequence
+				SetDestination_Waypoint
+				//SetTarget_Destination
+				//AimAt_Target
+				//MoveTo_Destination
+				WaitArrival
+				Wait(0.3)
+				NextWaypoint

@@ -1,0 +1,41 @@
+## ===========================
+# Default Collab Ignore Rules
+# ===========================
+
+# OS Generated
+# ============
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+
+# Visual Studio / MonoDevelop generated
+# =====================================
+[Ee]xported[Oo]bj/
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+
+# Unity generated
+# ===============
+[Oo]bj/
+[Bb]uild
+sysinfo.txt
+*.stackdump
+
+# External assets ignore
+# -ignores all listed folders when checking for collab changes: big speed improvements for load time
+#================
+#Assets/ExternalAssets/
+Assets/Level 1 Monster Pack/
+Assets/Necromancer/
+Assets/POLYGON_Renderbox/

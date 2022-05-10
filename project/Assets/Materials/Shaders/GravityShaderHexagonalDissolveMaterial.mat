@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: GravityShaderHexagonalDissolveMaterial
+  m_Shader: {fileID: 4800000, guid: 51ff3bf3f38559142af2ee5d0dee9990, type: 3}
+  m_ShaderKeywords: BOOLEAN_F2CA3DDD_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_83121EB6:
+        m_Texture: {fileID: 2800000, guid: b5cd8125655927c46801d21570a09f16, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Boolean_F2CA3DDD: 1
+    - Vector1_788460DF: 0.3
+    - Vector1_923A6C58: 1
+    - Vector1_9EF39AD9: 1.4
+    - Vector1_B7FE7361: 0.9
+    - Vector1_C3653D78: 0.5
+    - Vector1_CDE6B468: 1
+    - Vector1_CE50E48A: 5
+    m_Colors: []
