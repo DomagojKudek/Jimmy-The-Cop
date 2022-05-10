@@ -2,9 +2,9 @@
 2.5D platformer made in Unity game engine
 
 Co authored by:
- - Antun Mesar
- - Marko Cavalli
- - Ivan Glavinovic
+ - Antun Mesar (https://www.linkedin.com/in/antun-mesar-9b4394194/)
+ - Marko Cavalli (https://www.facebook.com/marko.cavalli)
+ - Ivan Glavinovic (https://www.facebook.com/ivan.glavinovic)
 
 # Description:
 
@@ -13,7 +13,10 @@ dynamic day-night cycle, different types of enemies and puzzle mechanisms, a mul
 
 The game was also showcased at the Reboot Develop 2019 conference as a part of the indie booth section.
 
-# Video:
+# Reboot Develop images:
+![project-example- Reboot-Develop-2019](https://user-images.githubusercontent.com/20684273/167620609-c28645ab-e7fa-4e0c-84ad-8682076e2082.png)
+
+# Reboot Video:
 https://youtu.be/sy82OPSyp54
 
 # How to use:
